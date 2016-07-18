@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int MENU_ITEM_LOGOUT = 1001;
     private CoordinatorLayout coordinatorLayout;
 
-    private static String  webUrl = "https://github.com/rocknegi";
+    private static String  webUrl = "https://github.com/rocknegi/Assassins_creed/tree/master";
     private static String email = "rocknegi53@gmail.com";
 
 
