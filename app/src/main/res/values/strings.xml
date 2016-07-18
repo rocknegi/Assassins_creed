@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Assassins Creed</string>
+    <string name="action_settings">Wallpapers</string>
+    <string name="text">The Assassins Creed games primarily revolve around the rivalry between two ancient secret societies: the Assassins and the Knights Templar, and their indirect relation to an ancient
+        species pre-dating humanity, whose society, along with much of Earths biosphere, was destroyed by a massive solar storm. The games real-world chronological setting begins in the year 2012, and features
+        Desmond Miles, a bartender who is a descendant of several lines of prominent Assassins; though raised as an Assassin, he left his nomadic family to seek out a more common lifestyle. He is initially kidnapped
+        by the megacorporation Abstergo Industries, the modern-day face of the Knights Templar, who are aware of Desmonds ancestral lineage. Desmond is forced to use the "Animus", a device that allows him to
+        experience his "ancestral memories". Abstergo is seeking to discover the location of several artifacts, or the "Pieces of Eden", that hold great power, to control mankind and alter its fate, bringing humanity
+        into one single unified group. Desmond also encounters a small team of modern-day Assassins; agreeing to work with them, Desmond uses their version of the Animus (the Animus 2.0) to continue to experience the memories of his ancestors to discover the locations of additional Pieces of Eden so they can be recovered before Abstergo can do so. While experiencing these memories, some of their abilities are genetically leaked into Desmond, known as the Bleeding Effect, giving him some of the Assassin skills of his predecessors at the cost of living with multiple sets of memories and personalities in his mind.
+        Within the Animus, Desmond explores the memories of a number of Assassins, including Altaïr Ibn-LaAhad, an initially disgraced Assassin working to redeem himself during the Third Crusade; Ezio Auditore da Firenze, an Assassin in Italy during the late 15th and early 16th centuries of the Italian Renaissance, and Ratohnhaké:ton, otherwise known as Connor, a half-Mohawk, half-British Assassin during the American Revolution. Throughout these events, Desmond learns of allusions to the prophetic end of the world in 2012 from a former Animus test subject, Subject 16: the event turns out to be a repeat of the disaster which wiped out the ancient civilization, and he finds out that his memories hold the key to Earths surviving the second storm. During his experiences, Desmond is aided by holographic projections of three of the ancient races rulers: Jupiter, Minerva, and Juno. After Desmond dies to ensure Earths survival, his memories, which have survived in cyberspace,are accessed by Abstergo, which hires a new subject to enter the Animus. The new subject relives the memories of Edward Kenway, Ratohnhaké:tons grandfather and a privateer-turned-pirate during the British colonial years.
+ </string>
+<string name="action_about">About Assassins Creed
+
+</string>
+
+    <string name="action_contactMe">Contact me
+</string>
+    <string name="logout">Logout</string>
+    <string name="shopping_cart">shopping cart</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="about_headline">About</string>
+    <string name="about_text"> Assassins Creed is an action-adventure video game series created by Ubisoft that consists of nine main games and a number of supporting materials. The games have appeared on the
+        PlayStation 3, PlayStation 4, Xbox 360, Xbox One, Microsoft Windows, OS X, Nintendo DS, PlayStation Portable, PlayStation Vita, iOS, HP webOS, Android, Nokia Symbian Windows Phone platforms, and the Wii U.
+        The games are set in a fictional history of real world events and follows the centuries-old struggle between the Assassins, who fight for peace with free will, and the Templars, who desire peace through
+        control. The main games in the franchise were developed by Ubisoft Montreal for the single player and Ubisoft Annecy for the multiplayer, with the handheld titles developed by Gameloft and Gryptonite
+        Studios, with additional development by Ubisoft Montreal. The series has been well received by the public and critics, and has sold over 73 million copies as of April 2014, becoming Ubisofts best selling
+        franchise.The series took inspiration from the novel Alamut by the Slovenian writer Vladimir Bartol, while building upon concepts from the Prince of Persia series.
+</string>
+    <string name="title_activity_contact">contact</string>
+
+    <string name="action_contact"> Google+ : \nhttps://plus.google.com/+rohitnegi_ezio_auditore\n \n
+                                       XDA : \n  http://forum.xda-developers.com/member.php?u=5583936
+
+    </string>
+    <string name="title_activity_settings_">Settings</string>
+    <string name="about_settings">
+        Everything here is WIP
+    </string>
+
+</resources>
