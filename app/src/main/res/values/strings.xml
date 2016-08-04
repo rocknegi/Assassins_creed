@@ -36,5 +36,11 @@
     <string name="about_settings">
         Everything here is WIP
     </string>
+    <string name="click_me">Click me</string>
+
+    <string name="red_settings">Red</string>
+    <string name="green_settings">Green</string>
+    <string name="yellow_settings">yellow</string>
+
 
 </resources>

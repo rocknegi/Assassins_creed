@@ -3,23 +3,31 @@ package rocknegicorporation.shpping;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class Settings_Activity extends AppCompatActivity {
     private static String email = "rocknegi53@gmail.com";
+    private CoordinatorLayout coordinatorLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+
+       coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinator);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        assert fab != null;
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,6 +45,11 @@ public class Settings_Activity extends AppCompatActivity {
         });
     }
 
+
+    public void buttonClickHandler(View view) {
+//        Toast.makeText(Settings_Activity.this, "", Toast.LENGTH_LONG).show();
+
     }
+}
 
 

@@ -1,6 +1,7 @@
 package rocknegicorporation.shpping;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
@@ -74,7 +75,8 @@ public class MainActivity extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        //noinspection SimplifiableIfStatement
+        //noinspection SimplifiableIfStatement\
+       LinearLayout content_layout = (LinearLayout) findViewById(R.id.content_layout);
 
         switch (id){
 
@@ -87,18 +89,22 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent2 = new Intent(this,contact.class);
                 startActivity(intent2);
                  return true;
+
             case MENU_ITEM_LOGOUT:
                 Snackbar.make(coordinatorLayout,"you selected logout",Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
                 return true;
+
             case R.id.action_wallpapers:
                 Snackbar.make(coordinatorLayout,"Coming soon",Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
                 return true;
+
             case R.id.action_cart:
                 Snackbar.make(coordinatorLayout,"MOTO: Nothing Is True Everything Is Permitted",Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
                 return true;
+
             case R.id.action_web:
                 Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(webUrl));
                 if (webIntent.resolveActivity(getPackageManager())!=null){
@@ -109,6 +115,31 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent3 = new Intent(this,Settings_Activity.class);
                 startActivity(intent3);
                 return true;
+
+            case R.id.menu_red:
+                if (item.isChecked())
+                    item.setChecked(false);
+                    else
+                    item.setChecked(true);
+                content_layout.setBackgroundColor(Color.RED);
+                return true;
+
+            case R.id.menu_green:
+                if (item.isChecked())
+                    item.setChecked(false);
+                    else
+                    item.setChecked(true);
+                content_layout.setBackgroundColor(Color.GREEN);
+                return true;
+
+            case R.id.menu_yellow:
+                if (item.isChecked())
+                    item.setChecked(false);
+                    else
+                    item.setChecked(true);
+                content_layout.setBackgroundColor(Color.YELLOW);
+                return true;
+
 
         }
 

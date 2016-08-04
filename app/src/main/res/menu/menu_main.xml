@@ -41,11 +41,33 @@
         />
 
 
+      <group android:checkableBehavior="single">>
 
 
+        <item
+            android:id="@+id/menu_red"
+            android:orderInCategory="105"
+            app:showAsAction="never"
+            android:title="@string/red_settings"
+            />
+<item
+            android:id="@+id/menu_green"
+            android:orderInCategory="106"
+            app:showAsAction="never"
+            android:title="@string/green_settings"
+            />
+<item
+            android:id="@+id/menu_yellow"
+            android:orderInCategory="107"
+            app:showAsAction="never"
+            android:title="@string/yellow_settings"
+            />
 
-
-
-
+      </group>
 
 </menu>
+
+
+
+
+
