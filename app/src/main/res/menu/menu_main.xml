@@ -62,6 +62,13 @@
             app:showAsAction="never"
             android:title="@string/yellow_settings"
             />
+          <item
+            android:id="@+id/menu_default"
+            android:orderInCategory="107"
+            app:showAsAction="never"
+            android:title="@string/default_settings"
+            />
+
 
       </group>
 

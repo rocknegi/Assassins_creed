@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-                fab.setOnClickListener(new View.OnClickListener() {
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String[] addresses = {email};
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
         int id = item.getItemId();
 
-       LinearLayout content_layout = (LinearLayout) findViewById(R.id.content_layout);
+        LinearLayout content_layout = (LinearLayout) findViewById(R.id.content_layout);
 
         switch (id){
 
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_contact_me:
                 Intent intent2 = new Intent(this,contact.class);
                 startActivity(intent2);
-                 return true;
+                return true;
 
             case MENU_ITEM_LOGOUT:
                 Snackbar.make(coordinatorLayout,"you selected logout",Snackbar.LENGTH_LONG)
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.menu_red:
                 if (item.isChecked())
                     item.setChecked(false);
-                    else
+                else
                     item.setChecked(true);
                 content_layout.setBackgroundColor(Color.RED);
                 return true;
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.menu_green:
                 if (item.isChecked())
                     item.setChecked(false);
-                    else
+                else
                     item.setChecked(true);
                 content_layout.setBackgroundColor(Color.GREEN);
                 return true;
@@ -133,9 +133,16 @@ public class MainActivity extends AppCompatActivity {
             case R.id.menu_yellow:
                 if (item.isChecked())
                     item.setChecked(false);
-                    else
+                else
                     item.setChecked(true);
                 content_layout.setBackgroundColor(Color.YELLOW);
+                return true;
+            case R.id.menu_default:
+                if (item.isChecked())
+                    item.setChecked(false);
+                else
+                    item.setChecked(true);
+                content_layout.setBackgroundColor(Color.WHITE);
                 return true;
 
 
