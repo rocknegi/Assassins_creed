@@ -42,8 +42,6 @@
 
 
       <group android:checkableBehavior="single">>
-
-
         <item
             android:id="@+id/menu_red"
             android:orderInCategory="105"
@@ -67,6 +65,12 @@
             android:orderInCategory="107"
             app:showAsAction="never"
             android:title="@string/default_settings"
+            />
+          <item
+            android:id="@+id/menu_dark"
+            android:orderInCategory="108"
+            app:showAsAction="never"
+            android:title="@string/Dark"
             />
 
 

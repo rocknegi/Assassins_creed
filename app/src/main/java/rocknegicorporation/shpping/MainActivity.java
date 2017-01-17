@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        assert fab != null;
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -143,6 +144,13 @@ public class MainActivity extends AppCompatActivity {
                 else
                     item.setChecked(true);
                 content_layout.setBackgroundColor(Color.WHITE);
+                return true;
+            case R.id.menu_dark:
+                if (item.isChecked())
+                    item.setChecked(false);
+                else
+                    item.setChecked(true);
+                content_layout.setBackgroundColor(Color.BLACK);
                 return true;
 
 

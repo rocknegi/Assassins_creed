@@ -42,6 +42,7 @@
     <string name="green_settings">Green</string>
     <string name="yellow_settings">yellow</string>
     <string name="default_settings">default</string>
+    <string name="Dark">Dark</string>
 
 
 </resources>

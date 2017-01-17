@@ -3,6 +3,7 @@ package rocknegicorporation.shpping;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -26,6 +27,8 @@ public class Settings_Activity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         assert fab != null;
         fab.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +47,17 @@ public class Settings_Activity extends AppCompatActivity {
             }
         });
     }
+    public void clickbutton3(View view){
+        long futureTime = System.currentTimeMillis() + 10000;
+        while(System.currentTimeMillis() < futureTime){
+            synchronized (this){
+                try{
+                    wait(futureTime-System.currentTimeMillis());
+                }catch (Exception e){}
+            }
+        }
 
+    }
 
     public void buttonClickHandler(View view) {
 //        Toast.makeText(Settings_Activity.this, "", Toast.LENGTH_LONG).show();
