@@ -1,10 +1,15 @@
 package rocknegicorporation.shpping;
 
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.graphics.Color;
 import android.media.Image;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -23,6 +28,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
 public class MainActivity extends AppCompatActivity {
     private static final int MENU_ITEM_LOGOUT = 1001;
     private CoordinatorLayout coordinatorLayout;
@@ -30,14 +37,12 @@ public class MainActivity extends AppCompatActivity {
     private static String  webUrl = "https://github.com/rocknegi/Assassins_creed/tree/master";
     private static String email = "rocknegi53@gmail.com";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinator);
-
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

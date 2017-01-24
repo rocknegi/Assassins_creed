@@ -12,35 +12,28 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_settings"
     tools:context="rocknegicorporation.shpping.Settings_Activity"
-    android:id="@+id/rohitLatout">
+    android:id="@+id/rohitLayout">
 
 
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:text="@string/about_settings"
-    android:onClick="buttonClickHandler"
-    android:id="@+id/lol"
-
-    />
-
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="hang"
-    android:layout_alignTop="@+id/lol"
-    android:layout_alignParentStart="true"
-    android:layout_marginTop="40dp"
-    android:id="@+id/button3"
-    android:onClick="clickbutton3" />
 
     <Button
+        android:text="whats the time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button2"
-        android:layout_marginTop="54dp"
-        android:layout_below="@+id/button3"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/button"
+        android:onClick="showTime"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckedTextView
+        android:text="Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="31dp"
+        android:id="@+id/rocksText"
+        android:onClick="showTime"
+        android:layout_alignEnd="@+id/button" />
 
 </RelativeLayout>
