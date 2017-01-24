@@ -3,6 +3,7 @@ package rocknegicorporation.shpping;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.Settings;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -16,6 +17,9 @@ import android.widget.Toast;
 public class Settings_Activity extends AppCompatActivity {
     private static String email = "rocknegi53@gmail.com";
     private CoordinatorLayout coordinatorLayout;
+
+     Handler
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,14 +52,26 @@ public class Settings_Activity extends AppCompatActivity {
         });
     }
     public void clickbutton3(View view){
-        long futureTime = System.currentTimeMillis() + 10000;
-        while(System.currentTimeMillis() < futureTime){
-            synchronized (this){
-                try{
-                    wait(futureTime-System.currentTimeMillis());
-                }catch (Exception e){}
+
+        Runnable r = new Runnable() {
+            @Override
+            public void run() {
+                long futureTime = System.currentTimeMillis() + 10000;
+                while(System.currentTimeMillis() < futureTime){
+                    synchronized (this){
+                        try{
+                            wait(futureTime-System.currentTimeMillis());
+                        }catch (Exception E){}
+                    }
+                }
+
             }
-        }
+        };
+
+        Thread thread = new Thread(r);
+        thread.start();
+
+
 
     }
 
