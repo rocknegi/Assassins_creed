@@ -66,7 +66,7 @@ public class Settings_Activity extends AppCompatActivity {
                 while(System.currentTimeMillis() < futureTime){
                     synchronized (this){
                         try{
-                            wait(futureTime-System.currentTimeMillis());
+                            wait(futureTime-System.currentTimeMillis())
                         }catch (Exception E){}
                     }
                     handler.sendEmptyMessage(0);
