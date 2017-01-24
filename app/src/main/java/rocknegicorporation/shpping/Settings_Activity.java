@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Message;
 import android.provider.Settings;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -18,7 +19,12 @@ public class Settings_Activity extends AppCompatActivity {
     private static String email = "rocknegi53@gmail.com";
     private CoordinatorLayout coordinatorLayout;
 
-     Handler handler
+     Handler handler = new Handler(){
+         @Override
+         public void handleMessage(Message msg) {
+
+         }
+     };
 
 
     @Override
@@ -63,6 +69,7 @@ public class Settings_Activity extends AppCompatActivity {
                             wait(futureTime-System.currentTimeMillis());
                         }catch (Exception E){}
                     }
+                    handler.sendEmptyMessage(0);
                 }
 
             }
