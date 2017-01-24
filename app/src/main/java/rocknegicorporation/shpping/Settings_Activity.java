@@ -18,7 +18,7 @@ public class Settings_Activity extends AppCompatActivity {
     private static String email = "rocknegi53@gmail.com";
     private CoordinatorLayout coordinatorLayout;
 
-     Handler
+     Handler handler
 
 
     @Override
